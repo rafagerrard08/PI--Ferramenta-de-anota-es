@@ -1,3 +1,6 @@
+/**
+  * @author rafael_ferraz
+ */
 package aplicacao1;
 
 import static javafx.application.Application.launch;
@@ -10,10 +13,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import static telas.Tela_InicialFXMLController.validaPlaca;
 
 public class Aplicacao1 extends Application {
-;    
+   
     public static void main(String[] args) {
         launch (args);
          

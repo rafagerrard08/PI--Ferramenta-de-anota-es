@@ -51,17 +51,7 @@ public class Tela_InicialFXMLController implements Initializable {
         observacao = editObs.getText();
         endereco = editEnd.getText();
     }
-public static boolean validaPlaca(String telefone, String celular){
-   boolean valido = true;
-   if(telefone.length() != 9){
-      valido = false;
-   }
-   if(!celular.substring(0, 9).matches("[A-Z]*")){
-      valido = false;
-   }
-   
-   return valido;
-}
+
     @FXML
     private void editLimpar(ActionEvent event) {
           editNome.setText("");
