@@ -11,7 +11,7 @@ public class ItemAgenda {
     public String celular;
     public String email;
     public String endereco;
-    public String observacao;
+    public String categoria;
    
 
     public String getNome() {
@@ -29,7 +29,7 @@ public class ItemAgenda {
         public String getEndereco() {
         return endereco;
         }
-         public String getObservacao() {
-        return observacao;
+         public String getCategoria() {
+        return categoria;
                 }
 }

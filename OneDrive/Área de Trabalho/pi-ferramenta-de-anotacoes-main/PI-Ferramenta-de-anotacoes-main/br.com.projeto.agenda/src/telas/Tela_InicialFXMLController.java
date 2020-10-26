@@ -51,7 +51,7 @@ public class Tela_InicialFXMLController implements Initializable {  //Rafael
     @FXML
     private TableColumn<ItemAgenda, String> colunaEndereco;
     @FXML
-    private TableColumn<ItemAgenda, String> colunaObservacao;
+    private TableColumn<ItemAgenda, String> colunaCategoria;
     
     List<ItemAgenda> ListaAgenda = new ArrayList(); //Thiago
     int totalItens = 0;
@@ -65,7 +65,7 @@ public class Tela_InicialFXMLController implements Initializable {  //Rafael
         colunaCel.setCellValueFactory(new PropertyValueFactory("celular"));
         colunaEmail.setCellValueFactory(new PropertyValueFactory("email"));
         colunaEndereco.setCellValueFactory(new PropertyValueFactory("endereco"));
-        colunaObservacao.setCellValueFactory(new PropertyValueFactory("observacao"));
+        colunaCategoria.setCellValueFactory(new PropertyValueFactory("categoria"));
     }
 
     @FXML
@@ -86,7 +86,7 @@ public class Tela_InicialFXMLController implements Initializable {  //Rafael
         item.telefone = editTel.getText();
         item.celular = editCelular.getText();
         item.email = editEmail.getText();
-        item.observacao = editObs.getText();
+        item.categoria = editObs.getText();
         item.endereco = editEnd.getText();
         item.id = totalItens;
         
@@ -152,7 +152,7 @@ public class Tela_InicialFXMLController implements Initializable {  //Rafael
             editCelular.setText(itemSelecionado.celular);
             editEnd.setText(itemSelecionado.endereco);
             editEmail.setText(itemSelecionado.email);
-            editObs.setText(itemSelecionado.observacao);
+            editObs.setText(itemSelecionado.categoria);
     
         }
     }
